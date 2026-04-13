@@ -1,11 +1,14 @@
-Today I learned statistics, descriptive statistics to be precise and this consits of measures of central tendency and measures of spread.
-For the measures of spread, this bascially just finds where the middle of the data is. And they consist of the mean, median and mode.
-mean: this is also known as average this can usually be used to measure peformance but the issue with the mean is that the result is usually not as correct when there is an outlier and that is where the median comes in.
-median: this solves the outlier problem by basically ordering the data and finding the middle number and if there are two, we find the mean of the middle numbers.
-mode: this just shows the number that appears frequently, it can be used to depict trend.
+Day 15 - Power Query (Practice automating data cleaning steps)
+Today I spent time inside Power Query, and it felt like a different world compared to regular Excel.
 
-For Measures of spread
- This checks for consistencies or inconsistencies in data and it comprises of range, standard deviation and inter quartile range.
-Range: this is the fastest and easiest, just find the diffrence between the max and the min value. This also does not depecit real value if there is an oulier
-Standard deviation: This siolves the outlier issue and checks for consistency in data, a higher standard deviation means that the data is volatile
-Interquartile range: basically subtracts the q3 of the data from the q1
+I worked through the whole extract → transform → load flow. Imported data, added index columns, created new queries using both duplicate and reference (duplicate when I want a completely separate copy I can change freely, and reference when I want queries to stay connected to the same source and update together). I also split columns, unpivoted data, and combined datasets using append and merge.
+
+The confusing part was understanding how each step stacks. I’d do something, then another step would break it, and I had to trace back through the applied steps to see what went wrong. It forced me to pay attention to the order of operations more than I expected.
+
+I also got a little look at the M language behind the scenes. Didn’t fully understand it yet, but it was interesting seeing how every click translates into code.
+
+Feels like I’ve only scratched the surface, but I can already see how powerful this is for cleaning messy data. I’m wondering how long it takes before this starts to feel natural instead of trial and error.
+
+#120DaysOfDataWithTina
+#DataAnalyticsLockedIn
+#LearningInPublic
